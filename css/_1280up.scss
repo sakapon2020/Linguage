@@ -173,47 +173,47 @@ Stylesheet: 1280px以上のモニタで適用
   bottom: 0;
   width: 100%;
 }
-.problem-list {
-  background: url(../images/bg-problem.png) no-repeat center bottom;
-  height: 448px;
-  margin: 0 auto;
-  position: relative;
-  max-width: 780px;
-}
-.problem-list li {
-  left: 70px;
-  padding: 8px 16px;
-  font-size: 14px;
-}
+// .problem-list {
+//   background: url(../images/bg-problem.png) no-repeat center bottom;
+//   height: 448px;
+//   margin: 0 auto;
+//   position: relative;
+//   max-width: 780px;
+// }
+// .problem-list li {
+//   left: 70px;
+//   padding: 8px 16px;
+//   font-size: 14px;
+// }
 
-.problem-list li span {
-  color: #ff5089;
-  font-size: 24px;
-}
-.problem-list li:first-child {
-  top: 0;
-  left: 0;
-}
-.problem-list li:nth-child(2) {
-  top: 24px;
-  right: -30px;
-}
-.problem-list li:nth-child(3) {
-  top: 148px;
-  left: -160px;
-}
-.problem-list li:nth-child(4) {
-  top: 152px;
-  right: -30px;
-}
-.problem-list li:nth-child(5) {
-  top: 286px;
-  left: -10px;
-}
-.problem-list li:last-child {
-  top: 280px;
-  right: -180px;
-}
+// .problem-list li span {
+//   color: #ff5089;
+//   font-size: 24px;
+// }
+// .problem-list li:first-child {
+//   top: 0;
+//   left: 0;
+// }
+// .problem-list li:nth-child(2) {
+//   top: 24px;
+//   right: -30px;
+// }
+// .problem-list li:nth-child(3) {
+//   top: 148px;
+//   left: -160px;
+// }
+// .problem-list li:nth-child(4) {
+//   top: 152px;
+//   right: -30px;
+// }
+// .problem-list li:nth-child(5) {
+//   top: 286px;
+//   left: -10px;
+// }
+// .problem-list li:last-child {
+//   top: 280px;
+//   right: -180px;
+// }
 .reason-catch {
   position: relative;
   display: inline-block;

@@ -245,10 +245,13 @@ a.header-tel-area {
   width: 180px;
 }
 a.btn-pink {
-  background: #ff0000;
+  background: #de264c;
   box-shadow: 0 4px 0 rgb(188 13 53);
   color: rgb(255 255 255);
   text-decoration: none;
+}
+a.btn-pink:hover {
+  background: #ff0000;
 }
 #cover {
   background: url(../images/bg-cover-sp.jpg) no-repeat center top;
@@ -297,6 +300,7 @@ a.btn-pink {
 }
 .person-area img {
   width: 100%;
+  height: 35vh;
 }
 #lp-avoid {
   margin: 80px auto 40px;
@@ -463,6 +467,7 @@ a.btn-pink {
 .text-pink {
   color: rgb(255 80 137);
   font-weight: bold;
+  margin: 0 -0.2em;
 }
 .reasons-box {
   padding-top: 48px;

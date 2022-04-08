@@ -129,7 +129,7 @@ body {
   text-align: left;
   font-size: 16px;
   font-family: Arial, "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  color: #222222;
+  color: rgb(34, 34, 34);
   line-height: 1.5;
   /* overflow: hidden; */
 }
@@ -253,7 +253,7 @@ a:hover img {
 .header-tel-area a {
   background: url(../images/tel-mark.png) no-repeat left 4px;
   background-size: 35px 23px;
-  color: #888888;
+  color: rgb(136, 136, 136);
   padding: 0 0 0 44px;
   display: inline-block;
   font-size: 30px;
@@ -285,10 +285,14 @@ a.header-tel-area {
 }
 
 a.btn-pink {
-  background: #ff0000;
-  box-shadow: 0 4px 0 #bc0d35;
-  color: white;
+  background: #de264c;
+  box-shadow: 0 4px 0 rgb(188, 13, 53);
+  color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+a.btn-pink:hover {
+  background: #ff0000;
 }
 
 #cover {
@@ -344,6 +348,7 @@ a.btn-pink {
 
 .person-area img {
   width: 100%;
+  height: 35vh;
 }
 
 #lp-avoid {
@@ -541,8 +546,9 @@ a.btn-pink {
 }
 
 .text-pink {
-  color: #ff5089;
+  color: rgb(255, 80, 137);
   font-weight: bold;
+  margin: 0 -0.2em;
 }
 
 .reasons-box {
@@ -1246,7 +1252,7 @@ a.btn-pink {
 
 .r2-station-outer:before {
   border-style: solid;
-  border-color: white rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-color: rgb(255, 255, 255) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   border-width: 20px 50px 0 50px;
   content: "";
   display: block;
@@ -1260,7 +1266,7 @@ a.btn-pink {
 
 .r2-station-box {
   position: relative;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 24px 0 32px;
   text-align: center;
 }
@@ -1539,7 +1545,7 @@ a.btn-pink {
 }
 
 .r3-anytime-sum span {
-  color: #de264c;
+  color: rgb(222, 38, 76);
 }
 
 .bg-gray {
@@ -1826,7 +1832,7 @@ a.btn-pink {
 
 .message-outer {
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid rgb(204, 204, 204);
   padding: 32px 24px 20px;
   position: relative;
 }
@@ -1998,7 +2004,7 @@ a.btn-pink {
 }
 
 .voice-box {
-  background: #ffeff3;
+  background: rgb(255, 239, 243);
   padding: 16px;
   position: relative;
 }
@@ -2016,8 +2022,8 @@ a.btn-pink {
 }
 
 .voice-box-inn {
-  background: white;
-  border: 1px solid #111111;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(17, 17, 17);
   padding: 32px 24px;
 }
 
@@ -2036,9 +2042,9 @@ a.btn-pink {
 }
 
 .v-school {
-  background: #ff93ff;
+  background: rgb(255, 147, 255);
   border-radius: 8px;
-  color: white;
+  color: rgb(255, 255, 255);
   display: inline-block;
   font-size: 12px;
   line-height: 1;
@@ -2060,7 +2066,7 @@ a.btn-pink {
 }
 
 .voice-tit {
-  border-top: 1px dashed #cccccc;
+  border-top: 1px dashed rgb(204, 204, 204);
   font-size: 26px;
   font-weight: bold;
   line-height: 1.3;
@@ -2093,7 +2099,7 @@ a.btn-pink {
 }
 
 .other-voice-list li {
-  background: #ffeff3;
+  background: rgb(255, 239, 243);
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 16px;
@@ -2137,7 +2143,7 @@ a.btn-pink {
 }
 
 .bg-pink {
-  background: #fad5d3;
+  background: rgb(250, 213, 211);
 }
 
 .flow-tit {
@@ -2168,7 +2174,7 @@ a.btn-pink {
 
 .flow-item {
   padding: 20px 24px;
-  background: white;
+  background: rgb(255, 255, 255);
   margin-bottom: 32px;
   position: relative;
 }
@@ -2194,9 +2200,9 @@ a.btn-pink {
 }
 
 .flow-item-catch {
-  background: #ff93ac;
+  background: rgb(255, 147, 172);
   border-radius: 8px;
-  color: white;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -2235,7 +2241,7 @@ a.btn-pink {
 }
 
 .flow-item-txt:before {
-  background: #ff5089;
+  background: rgb(255, 80, 137);
   content: "";
   display: block;
   height: 2px;
@@ -2311,7 +2317,7 @@ a.btn-pink {
 
 #footer .footer-school li a,
 #footer .footer-info li a {
-  color: #222222;
+  color: rgb(34, 34, 34);
   text-decoration: none;
 }
 
@@ -2340,7 +2346,7 @@ a.btn-pink {
 #footer .footer-info li {
   margin-right: 8px;
   padding-right: 8px;
-  border-right: 1px solid #222222;
+  border-right: 1px solid rgb(34, 34, 34);
   display: inline-block;
   margin-bottom: 8px;
   font-size: 14px;
@@ -2351,9 +2357,9 @@ a.btn-pink {
 .footer-copy {
   margin: 40px 0 40px;
   padding: 16px 0;
-  background: #ee7e94;
+  background: rgb(238, 126, 148);
   font-size: 12px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -2366,7 +2372,7 @@ a.btn-pink {
   #cover {
     background: url(../images/bg-cover-pc.jpg) no-repeat center top;
     background-size: cover;
-    height: 492px;
+    height: 450px;
     padding: 40px 0 0;
     text-align: center;
   }
@@ -2418,6 +2424,10 @@ a.btn-pink {
     float: right;
     position: relative;
     width: 40%;
+  }
+
+  .person-area img {
+    height: 450px;
   }
 
   #lp-avoid {
@@ -2492,7 +2502,7 @@ a.btn-pink {
   }
 
   .lead-item {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: inline-block;
     height: 300px;
     letter-spacing: normal;
@@ -2788,11 +2798,19 @@ a.btn-pink {
 .reason-each-tit-pink02 {
     color: #ff5089;
     font-size: 56px;
+    margin: 0 -0.1em;
   }
 
   .reason-each-tit-normal {
     font-size: 32px;
     display: block;
+  }
+
+  .reason-each-tit02, .reason-each-tit03 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
   }
 
   .reason-header {
@@ -2842,11 +2860,13 @@ a.btn-pink {
   .r1-detail-in-text01 {
     color: #ff5089;
     font-size: 26px;
-    letter-spacing: -2px;
+    letter-spacing: -4px;
+    margin-right: -4px;
   }
 
   .r1-detail-in-text02 {
-    margin: 0 0 0 26px;
+    margin: 0 0 0 24px;
+    letter-spacing: -2px;
   }
 
   .r1-detail-in-text03 {
@@ -2870,25 +2890,25 @@ a.btn-pink {
 
   .rd1-l .r1-detail-top-text {
     font-size: 20px;
-    top: 22px;
-    left: 26px;
+    top: 116x;
+    left: 20px;
   }
 
   .rd1-r .r1-detail-top-text {
     font-size: 20px;
-    top: 18px;
-    right: 20px;
+    top: 13px;
+    right: 15px;
+    letter-spacing: -2px;
   }
 
   .r1-detail-in-text01 {
     color: #ff5089;
-    font-size: 34px;
-    letter-spacing: -6px;
+    font-size: 26px;
   }
 
   .r1-detail-in-text02 {
     display: block;
-    margin: 0 0 0 36px;
+    margin: 0 0 0 12px;
   }
 
   .r1-detail-in-text03 {
@@ -2898,16 +2918,20 @@ a.btn-pink {
   .r1-detail-in-text04 {
     color: #ff5089;
     font-size: 26px;
+    margin-right: -5px;
   }
 
   .r1-detail-in-text05 {
     color: #ff5089;
     font-size: 26px;
-    letter-spacing: -4x;
+    letter-spacing: -4px;
+    margin: 0 -8px 0 -6px;
   }
 
   .r1-detail-in-text06 {
     display: block;
+    right: -4px;
+    letter-spacing: -4px;
   }
 
   .r1-detail-desc {
@@ -3010,6 +3034,13 @@ a.btn-pink {
     position: relative;
   }
 
+  .r2-detail-box01 .r2-detail-box-inn {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 310px;
+  }
+
   .r2-detail-box-inn:first-child h5 br {
     display: block;
   }
@@ -3028,9 +3059,7 @@ a.btn-pink {
 
   .r2-detail-box01 .r2-detail-txt {
     display: block;
-    line-height: 1.3;
     font-size: 28px;
-    font-weight: bold;
     margin: 0 0 80px;
     padding: 0 0 0 60px;
     position: relative;
@@ -3307,7 +3336,7 @@ a.btn-pink {
 
   .r2-station-box {
     position: relative;
-    background: white;
+    background: rgb(255, 255, 255);
     margin: 0 auto;
     padding: 32px 16px 40px;
     text-align: center;
@@ -3379,7 +3408,7 @@ a.btn-pink {
   }
 
   .reason-lead em {
-    color: #ee7e94;
+    color: rgb(238, 126, 148);
     font-size: 36px;
   }
 
@@ -3433,6 +3462,22 @@ a.btn-pink {
     width: 214px;
   }
 
+  .r3-event-tit {
+    font-size: 40px;
+    margin: 0 auto 10px;
+    width: 92%;
+    max-width: 980px;
+  }
+
+  .r3-event-txt {
+    font-size: 18px;
+  }
+
+  .r3-event-txt-btm {
+    font-size: 18px;
+    max-width: 600px;
+  }
+
   .youtube img {
     width: 100%;
   }
@@ -3481,7 +3526,7 @@ a.btn-pink {
   }
 
   .r3-anytime-sum span {
-    color: #de264c;
+    color: rgb(222, 38, 76);
   }
 
   .r3-anytime-desc {
@@ -3798,7 +3843,7 @@ a.btn-pink {
   }
 
   .voice-thumb img {
-    border: 4px solid #ffd9e3;
+    border: 4px solid rgb(255, 217, 227);
   }
 
   .voice-box:nth-child(odd) .voice-thumb {
@@ -3832,7 +3877,7 @@ a.btn-pink {
   }
 
   .v-school {
-    background: #ff93ac;
+    background: rgb(255, 147, 172);
   }
 
   .voice-box:after {
@@ -3857,7 +3902,7 @@ a.btn-pink {
     background: url(../images/bg-othervoice.jpg) no-repeat left top;
     display: inline-block;
     content: "";
-    height: 130px;
+    height: 270px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3877,7 +3922,7 @@ a.btn-pink {
   }
 
   .other-voice-list li {
-    background: #ffeff3;
+    background: rgb(255, 239, 243);
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
@@ -3930,9 +3975,9 @@ a.btn-pink {
   }
 
   .flow-item-catch {
-    background: #ff93ac;
+    background: rgb(255, 147, 172);
     border-radius: 8px;
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
     font-size: 15px;
     font-weight: bold;
@@ -3969,11 +4014,22 @@ a.btn-pink {
     width: auto;
   }
 
-  #footer .footer-school li,
-#footer .footer-info li {
-    margin-right: 8px;
-    padding-right: 8px;
-    border-right: 1px solid #222222;
+  #footer .footer-school li, #footer .footer-info li {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1;
+  }
+
+  #footer .footer-school li:not(:last-child) {
+    margin-right: 18px;
+    padding-right: 18px;
+  }
+
+  #footer .footer-school li:not(:last-child),
+#footer .footer-info li:not(:last-child) {
+    border-right: 1px solid rgb(34, 34, 34);
   }
 }
 @media (min-width: 1024px) {
@@ -3985,7 +4041,7 @@ a.btn-pink {
   #cover {
     background: url(../images/bg-cover-pc.jpg) no-repeat center top;
     background-size: cover;
-    height: 492px;
+    height: 480px;
     padding: 40px 0 0;
     text-align: center;
   }
@@ -4033,6 +4089,10 @@ a.btn-pink {
     float: right;
     position: relative;
     width: 40%;
+  }
+
+  .person-area img {
+    height: 480px;
   }
 
   #lp-avoid {
@@ -4107,7 +4167,7 @@ a.btn-pink {
   }
 
   .lead-item {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: inline-block;
     height: 300px;
     letter-spacing: normal;
@@ -4226,11 +4286,7 @@ a.btn-pink {
 
   .problem-list {
     background: url(../images/bg-problem.png) no-repeat center bottom;
-    background-size: auto 280px;
-    height: 320px;
-    margin: 0 auto;
-    position: relative;
-    max-width: 780px;
+    height: 448px;
   }
 
   .problem-list:after {
@@ -4239,8 +4295,7 @@ a.btn-pink {
   }
 
   .problem-list li {
-    font-size: 14px;
-    padding: 8px 16px;
+    padding: 10px 20px;
   }
 
   .problem-list li br {
@@ -4248,33 +4303,43 @@ a.btn-pink {
   }
 
   .problem-list li span {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .problem-list li:first-child {
-    left: 70px;
+    top: 0;
+    left: 0;
   }
 
   .problem-list li:nth-child(2) {
-    right: 60px;
+    top: 24px;
+    right: -30px;
   }
 
   .problem-list li:nth-child(3) {
-    left: -80px;
+    top: 148px;
+    left: -160px;
   }
 
   .problem-list li:nth-child(4) {
-    right: 50px;
+    top: 152px;
+    right: -30px;
   }
 
   .problem-list li:nth-child(5) {
-    left: 50px;
-    margin-right: 0;
+    top: 286px;
+    left: -10px;
   }
 
   .problem-list li:nth-child(6) {
-    right: -100px;
-    margin-right: 0;
+    top: 280px;
+    right: -180px;
+  }
+
+  .r1-detail-tit {
+    background: #fcebeb;
+    font-size: 32px;
+    white-space: normal;
   }
 
   .rd1-l .r1-detail-top-text {
@@ -4283,8 +4348,12 @@ a.btn-pink {
     line-height: 1.2;
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 40px;
     text-align: left;
+  }
+
+  .r1-detail-txt {
+    font-size: 17px;
   }
 
   .rd1-r .r1-detail-top-text {
@@ -4293,9 +4362,43 @@ a.btn-pink {
     line-height: 1.2;
     position: absolute;
     top: 26px;
-    right: 28px;
+    right: 36px;
     text-align: center;
     letter-spacing: -3px;
+  }
+
+  .r2-detail-box01 .r2-detail-txt {
+    margin: 0 0 80px;
+    padding: 0 0 0 24px;
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .r1-detail-in-text01 {
+    font-size: 34px;
+    letter-spacing: -6px;
+  }
+
+  .r1-detail-in-text02 {
+    display: block;
+    margin: 0 0 0 30px;
+  }
+
+  .r1-detail-in-text04 {
+    font-size: 34px;
+    margin-right: -5px;
+  }
+
+  .r1-detail-in-text05 {
+    color: #ff5089;
+    font-size: 34px;
+    letter-spacing: -4px;
+  }
+
+  .r1-detail-in-text06 {
+    display: block;
+    right: -4px;
+    letter-spacing: -4px;
   }
 
   .rd1-l .r1-detail-img {
@@ -4453,7 +4556,7 @@ a.btn-pink {
   }
 
   .avoid-area {
-    border: 1px solid #d4d4d4;
+    border: 1px solid rgb(212, 212, 212);
     border-radius: 10px;
     margin: 100px auto 60px;
     padding: 2%;
@@ -4511,7 +4614,7 @@ a.btn-pink {
   }
 
   .lead-item {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: inline-block;
     height: 300px;
     letter-spacing: normal;
@@ -4626,55 +4729,6 @@ a.btn-pink {
     left: 0;
     bottom: 0;
     width: 100%;
-  }
-
-  .problem-list {
-    background: url(../images/bg-problem.png) no-repeat center bottom;
-    height: 448px;
-    margin: 0 auto;
-    position: relative;
-    max-width: 780px;
-  }
-
-  .problem-list li {
-    left: 70px;
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .problem-list li span {
-    color: #ff5089;
-    font-size: 24px;
-  }
-
-  .problem-list li:first-child {
-    top: 0;
-    left: 0;
-  }
-
-  .problem-list li:nth-child(2) {
-    top: 24px;
-    right: -30px;
-  }
-
-  .problem-list li:nth-child(3) {
-    top: 148px;
-    left: -160px;
-  }
-
-  .problem-list li:nth-child(4) {
-    top: 152px;
-    right: -30px;
-  }
-
-  .problem-list li:nth-child(5) {
-    top: 286px;
-    left: -10px;
-  }
-
-  .problem-list li:last-child {
-    top: 280px;
-    right: -180px;
   }
 
   .reason-catch {

@@ -6,7 +6,7 @@ Stylesheet: 768px以上のモニタで適用
 #cover {
   background: url(../images/bg-cover-pc.jpg) no-repeat center top;
   background-size: cover;
-  height: 492px;
+  height: 450px;
   padding: 40px 0 0;
   text-align: center;
 }
@@ -52,6 +52,9 @@ Stylesheet: 768px以上のモニタで適用
   float: right;
   position: relative;
   width: 40%;
+}
+.person-area img {
+  height: 450px;
 }
 #lp-avoid {
   margin: 0 auto;
@@ -374,10 +377,17 @@ Stylesheet: 768px以上のモニタで適用
 .reason-each-tit-pink02 {
   color: #ff5089;
   font-size: 56px;
+  margin: 0 -0.1em;
 }
 .reason-each-tit-normal {
   font-size: 32px;
   display: block;
+}
+.reason-each-tit02, .reason-each-tit03 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
 }
 .reason-header {
   margin: 0 0 64px;
@@ -417,10 +427,12 @@ table {
 .r1-detail-in-text01 {
   color: #ff5089;
   font-size: 26px;
-  letter-spacing: -2px;
+  letter-spacing: -4px;
+  margin-right: -4px;
 }
 .r1-detail-in-text02 {
-  margin: 0 0 0 26px;
+  margin: 0 0 0 24px;
+  letter-spacing: -2px;
 }
 .r1-detail-in-text03 {
   display: block;
@@ -439,22 +451,22 @@ table {
 }
 .rd1-l .r1-detail-top-text {
   font-size: 20px;
-  top: 22px;
-  left: 26px;
+  top: 116x;
+  left: 20px;
 }
 .rd1-r .r1-detail-top-text {
   font-size: 20px;
-  top: 18px;
-  right: 20px;
+  top: 13px;
+  right: 15px;
+  letter-spacing: -2px;
 }
 .r1-detail-in-text01 {
   color: #ff5089;
-  font-size: 34px;
-  letter-spacing: -6px;
+  font-size: 26px;
 }
 .r1-detail-in-text02 {
   display: block;
-  margin: 0 0 0 36px;
+  margin: 0 0 0 12px;
 }
 .r1-detail-in-text03 {
   display: block;
@@ -462,14 +474,19 @@ table {
 .r1-detail-in-text04 {
   color: #ff5089;
   font-size: 26px;
+  margin-right: -5px;
+
 }
 .r1-detail-in-text05 {
   color: #ff5089;
   font-size: 26px;
-  letter-spacing: -4x;
+  letter-spacing: -4px;
+  margin: 0 -8px 0 -6px;
 }
 .r1-detail-in-text06 {
   display: block;
+  right: -4px;
+  letter-spacing: -4px;
 }
 .r1-detail-desc {
   border: 1px solid #111;
@@ -557,6 +574,12 @@ table {
   margin: 0 0 64px;
   position: relative;
 }
+.r2-detail-box01 .r2-detail-box-inn {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 310px;
+}
 .r2-detail-box-inn:first-child h5 br {
   display: block;
 }
@@ -573,9 +596,7 @@ table {
 }
 .r2-detail-box01 .r2-detail-txt {
   display: block;
-  line-height: 1.3;
   font-size: 28px;
-  font-weight: bold;
   margin: 0 0 80px;
   padding: 0 0 0 60px;
   position: relative;
@@ -933,6 +954,19 @@ table {
 }
 .r3-video-audience-pict {
   width: 214px;
+}
+.r3-event-tit {
+  font-size: 40px;
+  margin: 0 auto 10px;
+  width: 92%;
+  max-width: 980px;
+}
+.r3-event-txt {
+  font-size: 18px;
+}
+.r3-event-txt-btm {
+  font-size: 18px;
+  max-width: 600px;
 }
 .youtube img {
   width: 100%;
@@ -1293,7 +1327,7 @@ table {
   background: url(../images/bg-othervoice.jpg) no-repeat left top;
   display: inline-block;
   content: '';
-  height: 130px;
+  height: 270px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1320,7 +1354,6 @@ table {
   position: relative;
   width: 300px;
 }
-
 .arw-pink {
   background: url(../images/arrow-pink_l.png) no-repeat left center;
   background-size: 16px;
@@ -1388,9 +1421,21 @@ table {
   height: 164px;
   width: auto;
 }
-#footer .footer-school li,
-#footer .footer-info li {
-  margin-right: 8px;
-  padding-right: 8px;
+#footer .footer-school li, #footer .footer-info li {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1;
+  // margin-right: 8px;
+  // padding-right: 8px;
+  // border-right: 1px solid rgb(34 34 34);
+}
+#footer .footer-school li:not(:last-child) {
+  margin-right: 18px;
+  padding-right: 18px;
+}
+#footer .footer-school li:not(:last-child),
+#footer .footer-info li:not(:last-child) {
   border-right: 1px solid rgb(34 34 34);
 }
