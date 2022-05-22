@@ -4,11 +4,9 @@ Stylesheet: 1024px以上のモニタで適用
 
 ******************************************************************/
 #cover {
-  background: url(../images/bg-cover-pc.jpg) no-repeat center top;
-  background-size: cover;
-  height: 480px;
-  padding: 40px 0 0;
-  text-align: center;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 60px;
 }
 .header-tel-area {
   display: block;
@@ -48,8 +46,12 @@ Stylesheet: 1024px以上のモニタで適用
   position: relative;
   width: 40%;
 }
-.person-area img {
-  height: 480px;
+picture img {
+  width: auto;
+  // max-width: 100%;
+  height: auto;
+  max-height: none;
+  outline: none;
 }
 #lp-avoid {
   margin: 0 auto;
@@ -257,7 +259,7 @@ Stylesheet: 1024px以上のモニタで適用
 }
 .r1-detail-tit {
   background: #fcebeb;
-  font-size: 32px;
+  font-size: 30px;
   white-space: normal;
 }
 .rd1-l .r1-detail-top-text {
@@ -270,7 +272,7 @@ Stylesheet: 1024px以上のモニタで適用
   text-align: left;
 }
 .r1-detail-txt {
-  font-size: 17px;
+  font-size: 16px;
 }
 .rd1-r .r1-detail-top-text {
   font-size: 26px;

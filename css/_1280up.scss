@@ -3,11 +3,10 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
-.cover {
-  background-image: url(../images/bg-cover-pc.jpg) no-repeat center top;
-  background-size: cover;
-  padding: 40px 0 0;
-  text-align: center;
+#cover {
+  height: auto;
+  max-height: 490px;
+  margin-bottom: 60px;
 }
 .header-tel-area {
   display: block;
@@ -44,6 +43,19 @@ Stylesheet: 1280px以上のモニタで適用
 .avoid-area .item {
   margin: 0 auto 20px;
   width: 30%;
+}
+
+.person-area {
+  float: right;
+  position: relative;
+  width: 40%;
+}
+picture img {
+  width: auto;
+  // max-width: 100%;
+  height: auto;
+  max-height: none;
+  outline: none;
 }
 #lp-avoid {
   margin: 0 auto;
@@ -173,6 +185,20 @@ Stylesheet: 1280px以上のモニタで適用
   bottom: 0;
   width: 100%;
 }
+.other-voice:before {
+  background: url(../images/bg-othervoice.jpg) no-repeat left top;
+  display: inline-block;
+  content: '';
+  height: 270px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 144px;
+}
+.v-school {
+  background: rgb(255 147 172);
+}
+
 // .problem-list {
 //   background: url(../images/bg-problem.png) no-repeat center bottom;
 //   height: 448px;

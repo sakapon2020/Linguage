@@ -6,9 +6,14 @@ Stylesheet: 768px以上のモニタで適用
 #cover {
   background: url(../images/bg-cover-pc.jpg) no-repeat center top;
   background-size: cover;
-  height: 450px;
+  height: auto;
+  max-height: 350px;
   padding: 40px 0 0;
   text-align: center;
+  margin-bottom: 40px;
+}
+.cover-main {
+  min-height: 380px;
 }
 .header-tel-area {
   display: block;
@@ -41,20 +46,26 @@ Stylesheet: 768px以上のモニタで適用
     display: inline-block;
   }
 }
-.cover-main .mv-pict {
+.mv-pict {
   display: inline-block;
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 2%;
-  width: 75%;
+  width: auto;
+  max-width: 70%;
+  vertical-align: bottom;
 }
 .person-area {
-  float: right;
-  position: relative;
   width: 40%;
 }
-.person-area img {
-  height: 450px;
+picture img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  outline: none;
+  right: 0;
+  vertical-align: bottom;
 }
 #lp-avoid {
   margin: 0 auto;
@@ -489,9 +500,10 @@ table {
   letter-spacing: -4px;
 }
 .r1-detail-desc {
+  height: 300px;
   border: 1px solid #111;
   display: inline-block;
-  padding: 4px;
+  padding: 3px;
 }
 .r1-detail-tit {
   background: #fcebeb;
@@ -508,6 +520,7 @@ table {
 .r1-detail-txt {
   border-top: 1px dotted #111;
   height: 178px;
+  font-size: 16px;
   margin: 0 32px;
   padding: 16px 0;
 }
@@ -558,10 +571,11 @@ table {
   border-right: 1px dotted #111;
   display: inline-block;
   padding: 4px 0;
-  width: 50%;
+  width: 49%;
 }
-.reason1.container {
+#reason1.container {
   display: flex;
+  height: 1200px;
 }
 .reason-each-tit-cont {
   font-size: 22px;
@@ -1280,22 +1294,26 @@ table {
 .voice-thumb img {
   border: 4px solid rgb(255 217 227);
 }
-.voice-box:nth-child(odd) .voice-thumb {
-  float: left;
-}
-.voice-box:nth-child(even) .voice-thumb {
-  float: right;
-}
+
 .voice-desc {
   width: 100%;
 }
-.voice-box:nth-child(odd) .voice-desc {
-  float: right;
-  margin-left: -200px;
+.voice-box:not(:last-child) {
+  margin-bottom: 32px;
 }
-.voice-box:nth-child(even) .voice-desc {
+.voice-box {
+  background: rgb(255 239 243);
+  padding: 16px;
+  position: relative;
+}
+
+.voice-box:nth-child(odd) .voice-thumb {
   float: left;
-  margin-right: -200px;
+  // margin-left: -200px;
+}
+.voice-box:nth-child(even) .voice-thumb {
+  float: right;
+  // margin-right: -200px;
 }
 .voice-box:nth-child(odd) .voice-desc-inn {
   margin-left: 240px;
@@ -1305,6 +1323,16 @@ table {
 }
 .v-school {
   background: rgb(255 147 172);
+}
+.voice-box::before {
+  background: url(../images/voice-corner_top.png) no-repeat;
+  background-size: 48px;
+  content: '';
+  display: block;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0px;
 }
 .voice-box:after {
   background: url(../images/voice-corner_bottom.png) no-repeat;
@@ -1317,6 +1345,11 @@ table {
   right: 0;
   width: 48px;
 }
+.voice-box-inn {
+  background: rgb(255 255 255);
+  border: 1px solid rgb(17 17 17);
+  padding: 32px 48px;
+}
 .other-voice {
   background: none;
   // margin-top: 64px;
@@ -1327,7 +1360,7 @@ table {
   background: url(../images/bg-othervoice.jpg) no-repeat left top;
   display: inline-block;
   content: '';
-  height: 270px;
+  height: 130px;
   position: absolute;
   bottom: 0;
   left: 0;

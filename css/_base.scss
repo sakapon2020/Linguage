@@ -134,15 +134,15 @@ a:hover img {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
-.clearfix:before,
-.clearfix:after {
+.clear-fix:before,
+.clear-fix:after {
   content: '';
   display: table;
 }
-.clearfix:after {
+.clear-fix:after {
   clear: both;
 }
-.clearfix {
+.clear-fix {
   *zoom: 1;
 }
 #header {
@@ -256,7 +256,7 @@ a.btn-pink:hover {
 #cover {
   background: url(../images/bg-cover-sp.jpg) no-repeat center top;
   background-size: cover;
-  height: 35vh;
+  max-height: 360px;
   padding: 2% 0 0;
   text-align: center;
   margin: 0 auto 20px;
@@ -267,8 +267,9 @@ a.btn-pink:hover {
   margin: 0 auto;
   position: relative;
   width: 100%;
+  z-index: 3;
 }
-.cover-main .mv-pict {
+.mv-pict {
   display: inline-block;
   position: absolute;
   top: 10.161616%;
@@ -296,11 +297,15 @@ a.btn-pink:hover {
 .person-area {
   float: right;
   position: relative;
-  width: 30%;
+  max-width: 30%;
+  vertical-align: bottom;
 }
-.person-area img {
+picture img {
+  // max-width: 229px;
   width: 100%;
-  height: 35vh;
+  max-height: 300px;
+  right: 0;
+  bottom: 0;
 }
 #lp-avoid {
   margin: 80px auto 40px;
@@ -830,7 +835,7 @@ a.btn-pink:hover {
   border-right: 1px dotted #111;
   display: inline-block;
   padding: 4px 0;
-  width: 50%;
+  width: 49%;
 }
 .r1-detail-btm-table td:nth-child(even) {
   border-right: none;
@@ -1087,7 +1092,7 @@ a.btn-pink:hover {
   margin-top: 48px;
 }
 .r2-station-outer {
-  padding: 80px;
+  padding: 80px 0px;
 }
 .r2-station-outer:before {
   border-style: solid;
@@ -1102,10 +1107,21 @@ a.btn-pink:hover {
   left: 50%;
   width: 0;
 }
+.r2-station-outer:after {
+  background: url(../images/img-station_sp.png) no-repeat;
+  background-size: 122px 96px;
+  content: '';
+  display: block;
+  height: 96px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 122px;
+}
 .r2-station-box {
   position: relative;
   background: rgb(255 255 255);
-  padding: 24px 0 32px;
+  padding: 24px 0 32px 0;
   text-align: center;
 }
 .r2-station-sub-tit {
@@ -1172,17 +1188,7 @@ a.btn-pink:hover {
   width: 60px;
 }
 
-.r2-station-outer:after {
-  background: url(../images/img-station_sp.png) no-repeat;
-  background-size: 122px 96px;
-  content: '';
-  display: block;
-  height: 96px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 122px;
-}
+
 .reason-each-tit03 {
   font-size: 16px;
   font-weight: bold;
@@ -1847,6 +1853,7 @@ a.btn-pink:hover {
 }
 .other-voice-list {
   margin-bottom: 30px;
+  z-index: -2;
 }
 .other-voice-list li {
   background: rgb(255 239 243);

@@ -155,17 +155,17 @@ a:hover img {
   opacity: 0.75;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clear-fix:before,
+.clear-fix:after {
   content: "";
   display: table;
 }
 
-.clearfix:after {
+.clear-fix:after {
   clear: both;
 }
 
-.clearfix {
+.clear-fix {
   *zoom: 1;
 }
 
@@ -298,7 +298,7 @@ a.btn-pink:hover {
 #cover {
   background: url(../images/bg-cover-sp.jpg) no-repeat center top;
   background-size: cover;
-  height: 35vh;
+  max-height: 360px;
   padding: 2% 0 0;
   text-align: center;
   margin: 0 auto 20px;
@@ -310,9 +310,10 @@ a.btn-pink:hover {
   margin: 0 auto;
   position: relative;
   width: 100%;
+  z-index: 3;
 }
 
-.cover-main .mv-pict {
+.mv-pict {
   display: inline-block;
   position: absolute;
   top: 10.161616%;
@@ -343,12 +344,15 @@ a.btn-pink:hover {
 .person-area {
   float: right;
   position: relative;
-  width: 30%;
+  max-width: 30%;
+  vertical-align: bottom;
 }
 
-.person-area img {
+picture img {
   width: 100%;
-  height: 35vh;
+  max-height: 300px;
+  right: 0;
+  bottom: 0;
 }
 
 #lp-avoid {
@@ -950,7 +954,7 @@ a.btn-pink:hover {
   border-right: 1px dotted #111;
   display: inline-block;
   padding: 4px 0;
-  width: 50%;
+  width: 49%;
 }
 
 .r1-detail-btm-table td:nth-child(even) {
@@ -1247,7 +1251,7 @@ a.btn-pink:hover {
 }
 
 .r2-station-outer {
-  padding: 80px;
+  padding: 80px 0px;
 }
 
 .r2-station-outer:before {
@@ -1264,10 +1268,22 @@ a.btn-pink:hover {
   width: 0;
 }
 
+.r2-station-outer:after {
+  background: url(../images/img-station_sp.png) no-repeat;
+  background-size: 122px 96px;
+  content: "";
+  display: block;
+  height: 96px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 122px;
+}
+
 .r2-station-box {
   position: relative;
   background: rgb(255, 255, 255);
-  padding: 24px 0 32px;
+  padding: 24px 0 32px 0;
   text-align: center;
 }
 
@@ -1333,18 +1349,6 @@ a.btn-pink:hover {
   top: 0;
   left: 50%;
   width: 60px;
-}
-
-.r2-station-outer:after {
-  background: url(../images/img-station_sp.png) no-repeat;
-  background-size: 122px 96px;
-  content: "";
-  display: block;
-  height: 96px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 122px;
 }
 
 .reason-each-tit03 {
@@ -2096,6 +2100,7 @@ a.btn-pink:hover {
 
 .other-voice-list {
   margin-bottom: 30px;
+  z-index: -2;
 }
 
 .other-voice-list li {
@@ -2372,9 +2377,15 @@ a.btn-pink:hover {
   #cover {
     background: url(../images/bg-cover-pc.jpg) no-repeat center top;
     background-size: cover;
-    height: 450px;
+    height: auto;
+    max-height: 350px;
     padding: 40px 0 0;
     text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .cover-main {
+    min-height: 380px;
   }
 
   .header-tel-area {
@@ -2412,22 +2423,28 @@ a.btn-pink:hover {
     display: inline-block;
   }
 
-  .cover-main .mv-pict {
+  .mv-pict {
     display: inline-block;
     position: absolute;
-    top: 10%;
+    top: 2%;
     left: 2%;
-    width: 75%;
+    width: auto;
+    max-width: 70%;
+    vertical-align: bottom;
   }
 
   .person-area {
-    float: right;
-    position: relative;
     width: 40%;
   }
 
-  .person-area img {
-    height: 450px;
+  picture img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    outline: none;
+    right: 0;
+    vertical-align: bottom;
   }
 
   #lp-avoid {
@@ -2935,9 +2952,10 @@ a.btn-pink:hover {
   }
 
   .r1-detail-desc {
+    height: 300px;
     border: 1px solid #111;
     display: inline-block;
-    padding: 4px;
+    padding: 3px;
   }
 
   .r1-detail-tit {
@@ -2957,6 +2975,7 @@ a.btn-pink:hover {
   .r1-detail-txt {
     border-top: 1px dotted #111;
     height: 178px;
+    font-size: 16px;
     margin: 0 32px;
     padding: 16px 0;
   }
@@ -3014,11 +3033,12 @@ a.btn-pink:hover {
     border-right: 1px dotted #111;
     display: inline-block;
     padding: 4px 0;
-    width: 50%;
+    width: 49%;
   }
 
-  .reason1.container {
+  #reason1.container {
     display: flex;
+    height: 1200px;
   }
 
   .reason-each-tit-cont {
@@ -3846,26 +3866,26 @@ a.btn-pink:hover {
     border: 4px solid rgb(255, 217, 227);
   }
 
+  .voice-desc {
+    width: 100%;
+  }
+
+  .voice-box:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .voice-box {
+    background: rgb(255, 239, 243);
+    padding: 16px;
+    position: relative;
+  }
+
   .voice-box:nth-child(odd) .voice-thumb {
     float: left;
   }
 
   .voice-box:nth-child(even) .voice-thumb {
     float: right;
-  }
-
-  .voice-desc {
-    width: 100%;
-  }
-
-  .voice-box:nth-child(odd) .voice-desc {
-    float: right;
-    margin-left: -200px;
-  }
-
-  .voice-box:nth-child(even) .voice-desc {
-    float: left;
-    margin-right: -200px;
   }
 
   .voice-box:nth-child(odd) .voice-desc-inn {
@@ -3880,6 +3900,17 @@ a.btn-pink:hover {
     background: rgb(255, 147, 172);
   }
 
+  .voice-box::before {
+    background: url(../images/voice-corner_top.png) no-repeat;
+    background-size: 48px;
+    content: "";
+    display: block;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+
   .voice-box:after {
     background: url(../images/voice-corner_bottom.png) no-repeat;
     background-size: 48px;
@@ -3892,6 +3923,12 @@ a.btn-pink:hover {
     width: 48px;
   }
 
+  .voice-box-inn {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(17, 17, 17);
+    padding: 32px 48px;
+  }
+
   .other-voice {
     background: none;
     padding: 36px 0 96px;
@@ -3902,7 +3939,7 @@ a.btn-pink:hover {
     background: url(../images/bg-othervoice.jpg) no-repeat left top;
     display: inline-block;
     content: "";
-    height: 270px;
+    height: 130px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -4039,11 +4076,9 @@ a.btn-pink:hover {
 
   ******************************************************************/
   #cover {
-    background: url(../images/bg-cover-pc.jpg) no-repeat center top;
-    background-size: cover;
-    height: 480px;
-    padding: 40px 0 0;
-    text-align: center;
+    height: auto;
+    max-height: 500px;
+    margin-bottom: 60px;
   }
 
   .header-tel-area {
@@ -4091,8 +4126,11 @@ a.btn-pink:hover {
     width: 40%;
   }
 
-  .person-area img {
-    height: 480px;
+  picture img {
+    width: auto;
+    height: auto;
+    max-height: none;
+    outline: none;
   }
 
   #lp-avoid {
@@ -4338,7 +4376,7 @@ a.btn-pink:hover {
 
   .r1-detail-tit {
     background: #fcebeb;
-    font-size: 32px;
+    font-size: 30px;
     white-space: normal;
   }
 
@@ -4353,7 +4391,7 @@ a.btn-pink:hover {
   }
 
   .r1-detail-txt {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .rd1-r .r1-detail-top-text {
@@ -4538,11 +4576,10 @@ a.btn-pink:hover {
   Stylesheet: 1280px以上のモニタで適用
 
   ******************************************************************/
-  .cover {
-    background-image: url(../images/bg-cover-pc.jpg) no-repeat center top;
-    background-size: cover;
-    padding: 40px 0 0;
-    text-align: center;
+  #cover {
+    height: auto;
+    max-height: 490px;
+    margin-bottom: 60px;
   }
 
   .header-tel-area {
@@ -4584,6 +4621,19 @@ a.btn-pink:hover {
   .avoid-area .item {
     margin: 0 auto 20px;
     width: 30%;
+  }
+
+  .person-area {
+    float: right;
+    position: relative;
+    width: 40%;
+  }
+
+  picture img {
+    width: auto;
+    height: auto;
+    max-height: none;
+    outline: none;
   }
 
   #lp-avoid {
@@ -4729,6 +4779,21 @@ a.btn-pink:hover {
     left: 0;
     bottom: 0;
     width: 100%;
+  }
+
+  .other-voice:before {
+    background: url(../images/bg-othervoice.jpg) no-repeat left top;
+    display: inline-block;
+    content: "";
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 144px;
+  }
+
+  .v-school {
+    background: rgb(255, 147, 172);
   }
 
   .reason-catch {
