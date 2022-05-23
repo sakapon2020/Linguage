@@ -284,11 +284,147 @@ picture img {
   text-align: center;
   letter-spacing: -3px;
 }
+
 .r2-detail-box01 .r2-detail-txt {
   margin: 0 0 80px;
   padding: 0 0 0 24px;
   font-size: 28px;
   line-height: 1.3;
+}
+
+.r2-detail-box01 .r2-detail-box-inn {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 310px;
+}
+
+.r2-detail-box-inn .r2-detail-inn br {
+  display: block;
+}
+
+
+
+.r2-detail-box01 .r2-detail-txt:after {
+  background: url(../images/morning.png) no-repeat;
+  background-size: 232px 52px;
+  content: '';
+  display: block;
+  height: 52px;
+  margin-left: -116px;
+  position: absolute;
+  bottom: -68px;
+  left: 50%;
+  width: 232px;
+}
+
+.r2-detail-box01 .r2-detail-img {
+  display: block;
+  float: right;
+  width: 55%;
+}
+
+
+.r2-detail-box02 .r2-detail-box-inn {
+  float: right;
+  position: relative;
+  text-align: center;
+  width: 310px;
+  order: 1;
+}
+
+.r2-detail-box02 .r2-detail-txt:before {
+  background: url(../images/icon-holiday.png) no-repeat;
+  background-size: 48px;
+  counter-reset: '';
+  display: block;
+  height: 48px;
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  width: 48px;
+}
+
+.r2-detail-box02 .r2-detail-txt {
+  display: block;
+  font-size: 28px;
+  margin: 0 0 80px;
+  padding: 0 0 0 60px;
+  position: relative;
+  order: 0;
+
+  &-btm {
+    text-align-last: left;
+  }
+}
+
+.r2-detail-box02 .r2-detail-txt:after {
+  background: url(../images/holiday.png) no-repeat;
+  background-size: 232px 52px;
+  content: '';
+  display: block;
+  height: 52px;
+  margin-left: -116px;
+  position: absolute;
+  bottom: -68px;
+  left: 50%;
+  width: 232px;
+}
+
+.r2-detail-box02 .r2-detail-img {
+  display: block;
+  float: left;
+  width: 55%;
+}
+
+.r2-detail-box03 .r2-detail-box-inn {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 310px;
+}
+
+.r2-detail-box03 .r2-detail-txt:before {
+  background: url(../images/icon-night.png) no-repeat;
+  background-size: 48px;
+  counter-reset: '';
+  display: block;
+  height: 48px;
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  width: 48px;
+}
+
+.r2-detail-box03 .r2-detail-txt {
+  display: block;
+  font-size: 28px;
+  margin: 0 0 80px;
+  padding: 0 0 0 60px;
+  position: relative;
+
+  &-btm {
+    text-align-last: left;
+  }
+}
+
+.r2-detail-box03 .r2-detail-txt:after {
+  background: url(../images/afterwork.png) no-repeat;
+  background-size: 232px 52px;
+  content: '';
+  display: block;
+  height: 52px;
+  margin-left: -116px;
+  position: absolute;
+  bottom: -68px;
+  left: 50%;
+  width: 232px;
+}
+
+.r2-detail-box03 .r2-detail-img {
+  display: block;
+  float: right;
+  width: 55%;
 }
 .r1-detail-in-text01 {
   font-size: 34px;
