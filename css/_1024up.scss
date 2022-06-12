@@ -7,6 +7,10 @@ Stylesheet: 1024px以上のモニタで適用
   height: auto;
   max-height: 500px;
   margin-bottom: 60px;
+  padding: 0;
+}
+.cover-main {
+  max-height: 500px;
 }
 .header-tel-area {
   display: block;
@@ -50,8 +54,9 @@ picture img {
   width: auto;
   // max-width: 100%;
   height: auto;
-  max-height: none;
+  max-height: 500px;
   outline: none;
+  vertical-align: bottom;
 }
 #lp-avoid {
   margin: 0 auto;
@@ -562,4 +567,7 @@ picture img {
   margin: 104px 0 40px;
   position: relative;
   text-align: center;
+}
+.reason-num span:before {
+  top: 36px;
 }

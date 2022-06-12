@@ -2,6 +2,10 @@ html {
   color: #000;
   background: #fff;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
 body,
 div,
 dl,
@@ -39,6 +43,7 @@ fieldset,
 img {
   border: 0;
 }
+
 address,
 caption,
 cite,
@@ -301,7 +306,6 @@ a.btn-pink:hover {
   vertical-align: bottom;
 }
 picture img {
-  // max-width: 229px;
   width: 100%;
   max-height: 300px;
   right: 0;
@@ -389,6 +393,7 @@ picture img {
   text-align: center;
   margin-bottom: 12px;
 }
+
 .lead-item-ttl {
   position: relative;
   display: inline-block;
@@ -528,22 +533,24 @@ picture img {
   position: relative;
   text-align: center;
 }
-.reason-num:before {
-  position: absolute;
+.reason-num span:before {
   content: '';
-  width: 100%;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background: #ccc;
   top: 50%;
   display: block;
   height: 1px;
-  z-index: 1;
+  z-index: -1;
 }
 .reason-num span {
   background: #fff;
   display: inline-block;
   padding: 0 16px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .reason-num img {
   width: 72px;
@@ -554,9 +561,6 @@ picture img {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-}
-.r1-detail-outer {
-  margin-top: 40px;
 }
 .rd1-l,
 .rd1-r {
@@ -851,10 +855,13 @@ picture img {
   font-size: 28px;
   font-weight: bold;
 }
+
 .r2-detail-box01 .r2-detail-box-inn {
   display: block;
 }
-
+.r2-detail-outer .clearfix {
+  margin-bottom: 40px;
+}
 .r2-detail-box01 .r2-detail-txt {
   padding: 60px 0;
   font-size: 24px;
