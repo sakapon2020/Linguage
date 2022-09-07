@@ -1804,6 +1804,107 @@ body {
   Stylesheet: 1024px以下のモニタで適用
 
   ******************************************************************/
+  .problem-list {
+    width: 100%;
+    max-width: 767px;
+  }
+  .problem-list li {
+    font-size: 15px;
+  }
+  .problem-list li span {
+    color: rgb(255, 80, 137);
+    font-size: 20px;
+  }
+  .problem-list li:first-child {
+    top: 0;
+    left: 0;
+  }
+  .problem-list li:nth-child(2) {
+    top: 24px;
+    right: 0;
+  }
+  .problem-list li:nth-child(3) {
+    top: 140px;
+    left: -16px;
+    max-width: 300px;
+  }
+  .problem-list li:nth-child(4) {
+    top: 152px;
+    right: 0;
+  }
+  .problem-list li:nth-child(5) {
+    top: 286px;
+    left: 0;
+  }
+  .problem-list li:nth-child(6) {
+    top: 260px;
+    right: -10px;
+    max-width: 260px;
+  }
+  .r1-detail-in-text01 {
+    font-size: 32px;
+  }
+  .r1-detail-in-text02 {
+    display: block;
+    margin: 0 0 0 8px;
+  }
+  .r1-detail-in-text04 {
+    font-size: 28px;
+  }
+  .r1-detail-in-text05 {
+    font-size: 28px;
+  }
+  .r1-detail-in-text06 {
+    letter-spacing: -4px;
+  }
+  .r1-detail-desc span {
+    display: inline;
+  }
+  .r1-detail-tit {
+    font-size: 26px;
+  }
+  .r1-detail-txt {
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 248px;
+  }
+  .r1-detail-btm-table {
+    font-size: 15px;
+  }
+  .r1-detail-btm-table tbody {
+    display: inline-block;
+    width: 100%;
+  }
+  .r1-detail-btm-table tr {
+    border-bottom: 1px dotted rgb(17, 17, 17);
+    display: inline-block;
+    width: 100%;
+  }
+  .r1-detail-btm-table tr:last-child {
+    border-bottom: none;
+  }
+  .r1-detail-btm-table td {
+    border-right: 1px dotted rgb(17, 17, 17);
+    display: inline-block;
+    width: 49%;
+    padding: 4px 0;
+  }
+  .r1-detail-btm-table td:nth-child(even) {
+    border-right: none;
+  }
+  .rd1-l .r1-detail-top-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+  }
+  .rd1-r .r1-detail-img .r1-detail-top-text {
+    font-size: 22px;
+    top: 20px;
+    right: 20px;
+  }
 }
 @media (max-width: 767px) {
   /******************************************************************

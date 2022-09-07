@@ -3,3 +3,135 @@
 Stylesheet: 1024px以下のモニタで適用
 
 ******************************************************************/
+.problem {
+    &-list {
+        width: 100%;
+        max-width: 767px;
+        & li {
+            font-size: 15px;
+
+            & span {
+                color: rgb(255, 80, 137);
+                font-size: 20px;
+            }
+        }
+
+        & li:first-child {
+            top: 0;
+            left: 0;
+        }
+
+        & li:nth-child(2) {
+            top: 24px;
+            right: 0;
+        }
+
+        & li:nth-child(3) {
+            top: 140px;
+            left: -16px;
+            max-width: 300px;
+        }
+
+        & li:nth-child(4) {
+            top: 152px;
+            right: 0;
+        }
+
+        & li:nth-child(5) {
+            top: 286px;
+            left: 0;
+        }
+
+        & li:nth-child(6) {
+            top: 260px;
+            right: -10px;
+            max-width: 260px;
+        }
+    }
+}
+
+.r1-detail {
+    &-in-text {
+        &01 {
+            font-size: 32px;
+        }
+        &02 {
+            display: block;
+            margin: 0 0 0 8px;
+        }
+        &04 {
+            font-size: 28px;
+        }
+
+        &05 {
+            font-size: 28px;
+        }
+        &06 {
+            letter-spacing: -4px;
+        }
+    }
+
+    &-desc {
+        & span {
+            display: inline;
+        }
+    }
+
+    &-tit {
+        font-size: 26px;
+    }
+
+    &-txt {
+        font-size: 16px;
+        line-height: 1.7;
+        min-height: 248px;
+    }
+    &-btm-table {
+        font-size: 15px;
+        & tbody {
+            display: inline-block;
+            width: 100%;
+        }
+
+        & tr {
+            border-bottom: 1px dotted rgb(17, 17, 17);
+            display: inline-block;
+            width: 100%;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        & td {
+            border-right: 1px dotted rgb(17, 17, 17);
+            display: inline-block;
+            width: 49%;
+            padding: 4px 0;
+
+            &:nth-child(even) {
+                border-right: none;
+            }
+        }
+    }
+}
+.rd1-l {
+    & .r1-detail-top-text {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.2;
+        position: absolute;
+        top: 20px;
+        left: 28px;
+    }
+}
+
+.rd1-r {
+    & .r1-detail-img {
+        & .r1-detail-top-text {
+            font-size: 22px;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
