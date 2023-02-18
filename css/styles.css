@@ -1217,7 +1217,6 @@ body {
   box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   touch-action: pan-y;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1789,11 +1788,13 @@ body {
   Stylesheet: 1280px以下のモニタで適用
 
   ******************************************************************/
+  .r1-detail-desc {
+    min-height: 330px;
+  }
   .r1-detail-txt {
     border-top: 1px dotted rgb(17, 17, 17);
     font-size: 17px;
     height: auto;
-    min-height: 200px;
     margin: 0 32px;
     padding: 16px 0;
   }
@@ -1857,16 +1858,15 @@ body {
   .r1-detail-in-text06 {
     letter-spacing: -4px;
   }
-  .r1-detail-desc span {
-    display: inline;
+  .r1-detail-desc {
+    min-height: 320px;
   }
   .r1-detail-tit {
     font-size: 26px;
   }
   .r1-detail-txt {
-    font-size: 16px;
-    line-height: 1.7;
-    min-height: 248px;
+    font-size: 15px;
+    line-height: 1.5;
   }
   .r1-detail-btm-table {
     font-size: 15px;
@@ -1892,6 +1892,9 @@ body {
   .r1-detail-btm-table td:nth-child(even) {
     border-right: none;
   }
+  .wsa {
+    font-size: 22px;
+  }
   .rd1-l .r1-detail-top-text {
     font-size: 24px;
     font-weight: bold;
@@ -1904,6 +1907,53 @@ body {
     font-size: 22px;
     top: 20px;
     right: 20px;
+  }
+  .r2-station-box {
+    margin: 0 60px 0 auto;
+  }
+  .r2-station-sub-tit {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+  }
+  .r2-station-txt-btm {
+    font-size: 14px;
+    max-width: 360px;
+    margin: 0 30px 0 auto;
+  }
+  .r2-station-outer:after {
+    height: 240px;
+    width: 270px;
+  }
+  .other-voice {
+    background: url(../image/bg-othervoice_sp.jpg) no-repeat center top;
+    background-size: 200px 200px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 200px 0 30px;
+  }
+  .other-voice:before {
+    display: none;
+  }
+  .other-voice-list {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .other-voice-list li {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding: 24px;
+    width: 100%;
+  }
+  .other-voice-list li br {
+    display: none;
+  }
+  .other-voice-list li span {
+    display: inline;
+  }
+  .other-voice-list li:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2051,8 +2101,8 @@ body {
     margin: 4px 0 0;
   }
   .lead-item:first-child .lead-item-ttl::before,
-.lead-item:nth-child(2) .lead-item-ttl::before,
-.lead-item:last-child .lead-item-ttl::before {
+  .lead-item:nth-child(2) .lead-item-ttl::before,
+  .lead-item:last-child .lead-item-ttl::before {
     height: 20px;
     top: 50%;
     left: 0;
@@ -2506,7 +2556,7 @@ body {
     margin: 0 auto;
   }
   .r2-classroom-header:before,
-.r2-classroom-header:after {
+  .r2-classroom-header:after {
     display: none;
   }
   #r2-station {
