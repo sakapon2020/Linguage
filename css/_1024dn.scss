@@ -72,9 +72,7 @@ Stylesheet: 1024px以下のモニタで適用
     }
 
     &-desc {
-        & span {
-            display: inline;
-        }
+        min-height: 320px;
     }
 
     &-tit {
@@ -82,9 +80,8 @@ Stylesheet: 1024px以下のモニタで適用
     }
 
     &-txt {
-        font-size: 16px;
-        line-height: 1.7;
-        min-height: 248px;
+        font-size: 15px;
+        line-height: 1.5;
     }
     &-btm-table {
         font-size: 15px;
@@ -115,6 +112,9 @@ Stylesheet: 1024px以下のモニタで適用
         }
     }
 }
+.wsa {
+    font-size: 22px;
+}
 .rd1-l {
     & .r1-detail-top-text {
         font-size: 24px;
@@ -132,6 +132,63 @@ Stylesheet: 1024px以下のモニタで適用
             font-size: 22px;
             top: 20px;
             right: 20px;
+        }
+    }
+}
+
+.r2-station {
+    &-box {
+        margin: 0 60px 0 auto;
+    }
+    &-sub-tit {
+        display: inline-block;
+        font-size: 16px;
+        position: relative;
+    }
+    &-txt {
+        &-btm {
+            font-size: 14px;
+            max-width: 360px;
+            margin: 0 30px 0 auto;
+        }
+    }
+    &-outer {
+        &:after {
+            height: 240px;
+            width: 270px;
+            }
+    }
+}
+
+.other-voice {
+    background: url(../image/bg-othervoice_sp.jpg) no-repeat center top;
+    background-size: 200px 200px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 200px 0 30px;
+    &:before {
+        display: none;
+    }
+    &-list {
+        margin-bottom: 30px;
+        width: 100%;
+        & li {
+            display: inline-block;
+            font-size: 18px;
+            margin-bottom: 16px;
+            padding: 24px;
+            width: 100%;
+            & br {
+                display: none;
+            }
+
+            & span {
+                display: inline;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
