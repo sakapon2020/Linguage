@@ -3107,4 +3107,8 @@ body {
   .btn-app {
     width: 100%;
   }
+  .r1-detail-desc {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
 }/*# sourceMappingURL=styles.css.map */

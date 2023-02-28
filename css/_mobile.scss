@@ -36,3 +36,8 @@ Stylesheet: モバイルモニタで適用
 .btn-app {
     width: 100%;
 }
+.r1-detail {
+    &-desc {
+        min-height: fit-content;
+    }
+}
